@@ -2,6 +2,21 @@
 name = "kernelr"
 version = "0.1.0"
 edition = "2021"
+license = "Apache-2.0"
+description ="kernel development"
+repository ="https://github.com/girishnarayan/newkernel.git"
+homepage ="https://github.com/girishnarayan/newkernel.git"
+
+
+
+
+
+[dependencies]
+rppal = "0.14"
+anyhow = "1.0"
+
+[build-dependencies]
+cross = "0.2.5"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
