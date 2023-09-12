@@ -16,3 +16,6 @@ anyhow = "1.0"
 
 [build-dependencies]
 cross = "0.2.5"
+
+[target.arm-poky-linux-gnueabi]
+rustflags = ["-C", "link-arg=-marm", "-C", "link-arg=-march=armv7-a", "-C", "link-arg=-mfpu=neon-vfpv4", "-C", "link-arg=-mfloat-abi=hard"]
