@@ -8,8 +8,7 @@ repository ="https://github.com/girishnarayan/newkernel.git"
 homepage ="https://github.com/girishnarayan/newkernel.git"
 
 
-
-
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 rppal = "0.14"
@@ -17,7 +16,3 @@ anyhow = "1.0"
 
 [build-dependencies]
 cross = "0.2.5"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
