@@ -12,7 +12,10 @@ use core::arch::asm;
 const GPIO_LED: u8= 23;
 
 fn main() -> Result<()> {
-
+    let output = Command::new("aktualizr")
+    .arg("update") // Specify the aktualizr subcommand and arguments
+    .output()
+    .expect("Failed to execute aktualizr");
     println!("Blinking an led on a {}.",DeviceInfo::new()?.model());
 
     let mut pin  = Gpio::new()?
