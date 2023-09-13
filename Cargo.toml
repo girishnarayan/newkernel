@@ -13,6 +13,7 @@ homepage ="https://github.com/girishnarayan/newkernel.git"
 [dependencies]
 rppal = "0.14"
 anyhow = "1.0"
+ostree ="0.19.0"
 
 [build-dependencies]
 cross = "0.2.5"
